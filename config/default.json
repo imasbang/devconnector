@@ -1,3 +1,4 @@
 {
-    "mongoURI":"mongodb+srv://admin:iamnothing77@cluster0.szana.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI":"mongodb+srv://admin:iamnothing77@cluster0.szana.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "d3vC0nS3cr3t2k3N2021"
 }

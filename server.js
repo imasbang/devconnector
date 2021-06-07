@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const connectDB = require('./config/db');
-const { use } = require('./routes/api/users');
+
 
 let PORT = process.env.PORT;
 if (PORT == null || PORT == "") {
@@ -12,6 +12,11 @@ if (PORT == null || PORT == "") {
 
 // Connect database
 connectDB();
+
+
+// Middleware
+app.use(express.json());
+
 
 app.get('/', (req, res)=>{
     res.send('API running');
